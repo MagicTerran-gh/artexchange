@@ -1,0 +1,26 @@
+{
+  "name": "@my-app/contracts",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "description": "A minimalist, opinionated structure for managing smart contract ABIs and addresses.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network sepolia",
+    "copy-abis": "node scripts/copyAbis.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/contracts": "^4.9.3",
+    "chai": "^5.2.0",
+    "dotenv": "^16.5.0",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.8.0",
+    "hardhat": "^2.23.0"
+  }
+}

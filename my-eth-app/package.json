@@ -1,0 +1,38 @@
+{
+  "name": "@my-app/monorepo",
+  "version": "1.0.0",
+  "keywords": [
+    "ethereum",
+    "react",
+    "workspaces",
+    "yarn"
+  ],
+  "private": true,
+  "scripts": {
+    "subgraph:auth": "yarn workspace @my-app/subgraph auth",
+    "subgraph:codegen": "yarn workspace @my-app/subgraph codegen",
+    "subgraph:build": "yarn workspace @my-app/subgraph build",
+    "subgraph:deploy": "yarn workspace @my-app/subgraph deploy",
+    "react-app:build": "yarn workspace @my-app/react-app build",
+    "react-app:eject": "yarn workspace @my-app/react-app eject",
+    "react-app:ipfs": "yarn workspace @my-app/react-app ipfs",
+    "react-app:start": "yarn workspace @my-app/react-app start",
+    "react-app:test": "yarn workspace @my-app/react-app test"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@openzeppelin/contracts": "^5.3.0",
+    "chai": "^5.2.0",
+    "dotenv": "^16.5.0",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.8.0"
+  }
+}
